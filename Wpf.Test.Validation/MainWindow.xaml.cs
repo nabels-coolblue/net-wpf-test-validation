@@ -23,6 +23,8 @@ namespace Wpf.Test.Validation
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainWindowViewModel();
         }
     }
 }

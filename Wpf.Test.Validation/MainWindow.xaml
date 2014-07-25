@@ -3,6 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <WrapPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label>First name</Label>
+                <TextBox Text="{Binding Person.FirstName, UpdateSourceTrigger=PropertyChanged}" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Surname</Label>
+                <TextBox Text="{Binding Person.SurName, UpdateSourceTrigger=PropertyChanged}" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Full name</Label>
+                <TextBox Text="{Binding Person.FullName, Mode=OneWay}" Width="100"></TextBox>
+            </StackPanel>            
+        </WrapPanel>
     </Grid>
 </Window>
