@@ -3,11 +3,11 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
+using Coolblue.Domain.Common.Interfaces;
 using FluentValidation;
 using FluentValidation.Attributes;
 using FluentValidation.Internal;
 using FluentValidation.Results;
-using Wpf.Test.Domain.Common.Interfaces;
 
 namespace Wpf.Test.Domain.Common
 {

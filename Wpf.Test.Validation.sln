@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Validation", "Wpf.Test.Validation\Wpf.Test.Validation.csproj", "{0291284C-0EB1-4B45-A4B4-69DC76630955}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Domain", "Wpf.Test.Domain\Wpf.Test.Domain.csproj", "{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coolblue.Domain", "Wpf.Test.Domain\Coolblue.Domain.csproj", "{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Wpf", "Wpf.Test.Wpf\Wpf.Test.Wpf.csproj", "{80CC8351-E344-4B38-A878-F28B510E82CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Services", "Wpf.Test.Services\Wpf.Test.Services.csproj", "{4A696D9A-371F-42A0-A5D7-1B3B961ECB15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{80CC8351-E344-4B38-A878-F28B510E82CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80CC8351-E344-4B38-A878-F28B510E82CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80CC8351-E344-4B38-A878-F28B510E82CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A696D9A-371F-42A0-A5D7-1B3B961ECB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A696D9A-371F-42A0-A5D7-1B3B961ECB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A696D9A-371F-42A0-A5D7-1B3B961ECB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A696D9A-371F-42A0-A5D7-1B3B961ECB15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Coolblue.Domain;
 using FluentValidation.Results;
 using Wpf.Test.Domain;
 

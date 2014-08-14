@@ -50,9 +50,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Wpf.Test.Domain\Wpf.Test.Domain.csproj">
+    <ProjectReference Include="..\Wpf.Test.Domain\Coolblue.Domain.csproj">
       <Project>{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}</Project>
-      <Name>Wpf.Test.Domain</Name>
+      <Name>Coolblue.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

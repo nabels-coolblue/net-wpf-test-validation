@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+﻿using FluentValidation;
 
-namespace Wpf.Test.Domain
+namespace Coolblue.Domain
 {
     public class PersonValidator : AbstractValidator<Person>
     {

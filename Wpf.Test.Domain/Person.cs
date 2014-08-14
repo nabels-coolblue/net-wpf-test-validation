@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
-using FluentValidation.Internal;
+﻿using FluentValidation;
 using Wpf.Test.Domain.Common;
 
-namespace Wpf.Test.Domain
+namespace Coolblue.Domain
 {
     public class Person : DomainObject
     {
