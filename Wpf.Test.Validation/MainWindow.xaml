@@ -15,7 +15,7 @@
             <StackPanel Orientation="Horizontal">
                 <Label>Full name</Label>
                 <TextBox Text="{Binding Person.FullName, Mode=OneWay}" Width="100"></TextBox>
-            </StackPanel>            
+            </StackPanel>
         </WrapPanel>
     </Grid>
 </Window>

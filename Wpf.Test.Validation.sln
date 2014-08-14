@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Validation", "Wpf.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Domain", "Wpf.Test.Domain\Wpf.Test.Domain.csproj", "{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Test.Wpf", "Wpf.Test.Wpf\Wpf.Test.Wpf.csproj", "{80CC8351-E344-4B38-A878-F28B510E82CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0AFF51A-8CCC-4643-80A1-94CDCB3D4024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80CC8351-E344-4B38-A878-F28B510E82CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CC8351-E344-4B38-A878-F28B510E82CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80CC8351-E344-4B38-A878-F28B510E82CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80CC8351-E344-4B38-A878-F28B510E82CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

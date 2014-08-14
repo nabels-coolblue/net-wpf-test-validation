@@ -2,49 +2,36 @@
 using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+using FluentValidation;
+using FluentValidation.Attributes;
+using FluentValidation.Internal;
+using FluentValidation.Results;
+using Wpf.Test.Domain.Common.Interfaces;
 
 namespace Wpf.Test.Domain.Common
 {
-    public class DomainObject : INotifyPropertyChanged
+    public interface IDomainObject : IValidatable
     {
-        protected DomainObject() { }
+    }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+    public abstract class DomainObject : IDomainObject
+    {
+        private readonly IValidator _validator;
+        
+        protected DomainObject(IValidator validator)
         {
-            ValidateProperty(propertyName, value);
-
-            if (object.Equals(storage, value)) return false;
-
-            storage = value;
-            OnPropertyChanged(propertyName);
-
-            return true;
+            _validator = validator;
         }
 
-        protected void OnPropertyChanged(string propertyName)
+        public bool IsValid
         {
-            var eventHandler = this.PropertyChanged;
-            if (eventHandler != null)
-            {
-                eventHandler(this, new PropertyChangedEventArgs(propertyName));
-            }
+            get { return Validate(new ValidationContext(this)).IsValid; }
         }
 
-        protected void OnPropertyChanged<T>(Expression<Func<T>> propertyExpression)
+        public ValidationResult Validate(ValidationContext context)
         {
-            var propertyName = PropertySupport.ExtractPropertyName(propertyExpression);
-            this.OnPropertyChanged(propertyName);
-        }
-
-        protected void ValidateProperty(object value, [CallerMemberName] string propertyName = null)
-        {
-            ValidateProperty(propertyName, value);
-        }
-
-        protected virtual void ValidateProperty(string propertyName, object value)
-        {
+            return _validator.Validate(context);
         }
     }
 }
